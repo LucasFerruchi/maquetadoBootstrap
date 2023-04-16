@@ -24,7 +24,14 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container d-flex justify-content-between">
           <div>
-            <a class="navbar-brand" href="#">Maquetado con Bootstrap</a>
+            <a class="navbar-brand" href="/index.html"
+              ><img
+                src="/assets/img/logo.png"
+                alt="logoMaquetado"
+                class="w-25"
+              />
+              Maquetado con Bootstrap</a
+            >
             <button
               class="navbar-toggler"
               type="button"
@@ -41,7 +48,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/index.html"
                     ><i class="fa-solid fa-house"></i> Home</a
                   >
                 </li>
@@ -78,7 +88,7 @@
       </nav>
     </header>
     <main>
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel slide mb-5">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -156,6 +166,14 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perferendis, libero!
                 </p>
+                <button
+                  type="button"
+                  class="btn btn-primary m-1 w-75"
+                  data-bs-toggle="modal"
+                  data-bs-target="#"
+                >
+                  Ver mas!
+                </button>
               </div>
             </div>
           </div>
@@ -172,16 +190,14 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perferendis, libero!
                 </p>
-                <div>
-                  <!-- SweetAlert -->
-              <button
-              type="button"
-              class="btn btn-primary m-1 w-75"
-              swal="Hello world!"
-            >
-              Ver mas!
-            </button>
-                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary m-1 w-75"
+                  data-bs-toggle="modal"
+                  data-bs-target="#"
+                >
+                  Ver mas!
+                </button>
               </div>
             </div>
           </div>
@@ -197,21 +213,17 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perferendis, libero!
                 </p>
-              </div>
-              <div>
                 <!-- Button trigger modal -->
-            <button
-            type="button"
-            class="btn btn-primary m-1 w-75"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Ver mas!
-          </button>
+                <button
+                  type="button"
+                  class="btn btn-primary m-1 w-75"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Ver mas!
+                </button>
               </div>
-              
             </div>
-            
           </div>
         </article>
 
@@ -259,7 +271,7 @@
         </article>
       </section>
       <hr />
-      <section class="container">
+      <section class="container mb-5">
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <div class="card shadow mt-4 text-center">
@@ -294,68 +306,89 @@
             </div>
           </div>
         </div>
-        <hr />
-        <div class="card" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
       </section>
+      <hr />
     </main>
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <footer class="bg-dark text-light py-5 mt-4">
       <section class="container">
         <div class="row">
           <div class="col-sm-12 col-md-3">
-            <p>LOGO</p>
-            <a href="">
-              <img src="" alt="" />
-            </a>
+            <p class="h4">Maquetado</p>
+            <hr />
+            <div class="text-center">
+              <a href="/index.html">
+                <img
+                  src="/assets/img/logo.png"
+                  alt="logoMaquetado"
+                  class="w-50"
+                />
+              </a>
+            </div>
           </div>
           <div class="col-sm-12 col-md-6">
-            <p>Encontranos en:</p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.30717595003!2d-65.29263446298481!3d-26.83268847169943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1681239994501!5m2!1ses-419!2sar"
-              width="350"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <div class="d-flex justify-content-between">
-              <p>Facebook</p>
-              <p>Instagram</p>
-              <p>Twitter</p>
+            <p class="h4">Encontranos en:</p>
+            <hr />
+            <div class="text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.30717595003!2d-65.29263446298481!3d-26.83268847169943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1681239994501!5m2!1ses-419!2sar"
+                width="350"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="d-flex justify-content-evenly mt-4">
+                <a href="/pages/error404.html" target="_blank"
+                  ><i class="fa-brands fa-facebook fa-2xl"></i
+                ></a>
+                <a href="/pages/error404.html" target="_blank"
+                  ><i class="fa-brands fa-instagram fa-2xl"></i
+                ></a>
+                <a href="/pages/error404.html" target="_blank"
+                  ><i class="fa-brands fa-twitter fa-2xl"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-3">
-            <p>Horarios de atencion:</p>
-            <p>Lun a Vier: 9-20hs</p>
-            <p>Sab, Dom y feriados 9-13hs</p>
+            <p class="h4">Horarios de atencion:</p>
+            <hr />
+            <p class="lead">Sab, Dom y Feriados: 9-13hs</p>
+            <p class="lead">Lun a Vier: 9-20hs</p>
           </div>
         </div>
       </section>
