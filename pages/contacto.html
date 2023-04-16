@@ -20,10 +20,79 @@
     <title>Maquetado con Bootstrap</title>
   </head>
   <body>
-    <header><h1>Maquetado</h1></header>
+    
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container d-flex justify-content-between">
+            <div>
+              <a class="navbar-brand" href="/index.html"
+                ><img
+                  src="/assets/img/logo.png"
+                  alt="logoMaquetado"
+                  class="w-25"
+                />
+                Maquetado con Bootstrap</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/index.html"
+                      ><i class="fa-solid fa-house"></i> Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/error404.html"
+                      ><i class="fa-solid fa-link"></i> Link</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/pages/contacto.html" target="_blank">Contacto</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="/pages/error404.html">Legales</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+    
     <main>
-      <section class="container">
-        <p>Quieres contactarnos? Por favor completa el siguiente formulario:</p>
+      <section class="container mt-5">
+        <p class="h4">Quieres contactarnos? Por favor completa el siguiente formulario:</p>
         <!-- <form action="">
                 <label for="name">Nombre</label>
                 <input type="text" id="name">
@@ -32,9 +101,10 @@
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <input type="submit" value="Enviar mensaje">
             </form> -->
-
+            <div class="row d-flex justify-content-evenly mt-5">
+        <div class="col-sm-12 col-md-6">
         <form action="">
-          <div class="form-floating mb-3">
+          <div class="form-floating my-5">
             <input
               type="text"
               class="form-control bordesContacto"
@@ -76,6 +146,11 @@
 
           <button class="btn btn-primary mt-4" type="submit">Enviar</button>
         </form>
+      </div>
+      <div class="col-sm-12 col-md-6 text-center">
+        <img src="/assets/img/sideSmall.jpg" alt="">
+      </div>
+    </div>
       </section>
     </main>
   
@@ -85,32 +160,49 @@
       <section class="container">
         <div class="row">
           <div class="col-sm-12 col-md-3">
-            <p>LOGO</p>
-            <a href="">
-              <img src="" alt="" />
-            </a>
+            <p class="h4">Maquetado</p>
+            <hr />
+            <div class="text-center">
+              <a href="/index.html">
+                <img
+                  src="/assets/img/logo.png"
+                  alt="logoMaquetado"
+                  class="w-50"
+                />
+              </a>
+            </div>
           </div>
           <div class="col-sm-12 col-md-6">
-            <p>Encontranos en:</p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.30717595003!2d-65.29263446298481!3d-26.83268847169943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1681239994501!5m2!1ses-419!2sar"
-              width="350"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <div class="d-flex justify-content-between">
-              <p>Facebook</p>
-              <p>Instagram</p>
-              <p>Twitter</p>
+            <p class="h4">Encontranos en:</p>
+            <hr />
+            <div class="text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.30717595003!2d-65.29263446298481!3d-26.83268847169943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1681239994501!5m2!1ses-419!2sar"
+                width="350"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="d-flex justify-content-evenly my-4">
+                <a href="/pages/error404.html" target="_blank"
+                  ><i class="fa-brands fa-facebook fa-2xl"></i
+                ></a>
+                <a href="/pages/error404.html" target="_blank"
+                  ><i class="fa-brands fa-instagram fa-2xl"></i
+                ></a>
+                <a href="/pages/error404.html" target="_blank"
+                  ><i class="fa-brands fa-twitter fa-2xl"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-3">
-            <p>Horarios de atencion:</p>
-            <p>Lun a Vier: 9-20hs</p>
-            <p>Sab, Dom y feriados 9-13hs</p>
+            <p class="h4">Horarios de atencion:</p>
+            <hr />
+            <p class="lead">Sab, Dom y Feriados: 9-13hs</p>
+            <p class="lead">Lun a Vier: 9-20hs</p>
           </div>
         </div>
       </section>
